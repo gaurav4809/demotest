@@ -23,6 +23,8 @@ steps:
     - 'rsync'
     - '-d'
     - '-r'
+    - 'dags'
+    - 'gs://${_GCS_BUCKET}dags'
     #Logging
 options:
   logging: CLOUD_LOGGING_ONLY
