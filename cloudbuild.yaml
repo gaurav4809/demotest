@@ -8,7 +8,7 @@ steps:
     - '-r'
     
     - 'tron'
-    - 'gs://${_GCS_BUCKET_1}.tron folder/'
+    - 'gs://${_GCS_BUCKET_1}tron folder'
 
 
 - name: 'gcr.io/cloud-builders/gsutil'
@@ -19,7 +19,7 @@ steps:
     - '-r'
     
     - 'dags'
-    - 'gs://${_GCS_BUCKET_1}.dags folder/'
+    - 'gs://${_GCS_BUCKET_1}dags folder'
  
  
   
