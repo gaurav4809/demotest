@@ -6,23 +6,17 @@ steps:
     - 'rsync'
     - '-d'
     - '-r'
-    
     - 'tron'
     - 'gs://${_GCS_BUCKET_1}tron folder'
-
-
 - name: 'gcr.io/cloud-builders/gsutil'
   args:
     - '-m'
     - 'rsync'
     - '-d'
     - '-r'
-    
     - 'dags'
     - 'gs://${_GCS_BUCKET_1}dags folder'
- 
- 
-  
+
     #Logging
 options:
   logging: CLOUD_LOGGING_ONLY
