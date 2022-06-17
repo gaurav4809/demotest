@@ -9,6 +9,20 @@ steps:
     
     - 'tron'
     - 'gs://${_GCS_BUCKET_1}.destination/'
+
+
+- name: 'gcr.io/cloud-builders/gsutil'
+  args:
+    - '-m'
+    - 'rsync'
+    - '-d'
+    - '-r'
+    
+    - 'dags'
+    - 'gs://${_GCS_BUCKET_1}.destination/'
+ 
+ 
+  
     #Logging
 options:
   logging: CLOUD_LOGGING_ONLY
