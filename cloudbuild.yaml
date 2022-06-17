@@ -6,7 +6,8 @@ steps:
     - 'rsync'
     - '-d'
     - '-r'
-    - 'dags,./tron'
+    - 'dags'
+    - 'tron'
     - 'gs://${_GCS_BUCKET_1}.destination/'
     #Logging
 options:
